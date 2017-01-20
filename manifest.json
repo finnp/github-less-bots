@@ -1,0 +1,19 @@
+{
+  "name": "GitHub remove bots",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Removes bots from the GitHub front page.",
+  "homepage_url": "https://github.com/finnp/github-less-bots",
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}
